@@ -32,7 +32,9 @@
   }
   
   // Put your answer below -------------------------
-  
+  let doSomethingCool = function(){
+      console.log("Something Cool!")
+  }
   
   // -----------------------------------------------
   
@@ -52,8 +54,9 @@
   setTimeout(sayHi, 2000);
   
   // Put your answer below -------------------------
-  
-  
+  let sayHi = function(){
+      alert("Hello, World!")
+  } 
   // -----------------------------------------------
   
   //////////////////////////////////////////////////
@@ -83,7 +86,7 @@
   
   // Put your answer below -------------------------
   
-  
+  [b] the variable letter in the functions overrides the initial variable of x. Then the code would execute from top to bottom so 'y' would be logged and then 'z'
   // -----------------------------------------------
   
   //////////////////////////////////////////////////
@@ -105,7 +108,9 @@
   
   // Put your answer below -------------------------
   
-  
+  var reverseStr = function(str){
+      
+  }
   
   // -----------------------------------------------
   
@@ -140,7 +145,10 @@
   
   // Put your answer below -------------------------
   
-  
+  let spanishColor = function(colorName){
+      
+
+  }
   
   // -----------------------------------------------
   
@@ -157,7 +165,8 @@
   var foo = "bar";
   
   // Put your answer below -------------------------
-  
+  var foo = ""
+  foo = "bar"
   
   // -----------------------------------------------
   
@@ -181,7 +190,9 @@
   // callTenTime(functionName);
   
   // Put your answer below -------------------------
-  
+  var callNtimes = function(){
+      var 
+  }
   
   // -----------------------------------------------
   
@@ -210,7 +221,15 @@
   
   // Put your answer below -------------------------
   
-  
+  var increaseScore = function() {
+      let score = 0;
+      score++;
+  }
+
+  var decreasesScore = function() {
+      let score = 0;
+      score--;
+  }
   
   // -----------------------------------------------
   
@@ -231,7 +250,13 @@
   
   // Put your answer below -------------------------
   
-  
+  function addNumbers(numberA, numberB){
+      console.log(numberA + numberB);
+  };
+
+  var twoPlustwo = addNumbers(2,2);
+
+
   
   // -----------------------------------------------
   
@@ -257,7 +282,12 @@
   };
   
   // Put your answer below -------------------------
-  
+//   It doesn't have a default amount for the amount parameter so amount is undefined when trying to add speed.
+
+  var speed = 0;
+  var accelerate = function(amount = 1) {
+      speed += amount;
+  };
   
   
   // -----------------------------------------------
