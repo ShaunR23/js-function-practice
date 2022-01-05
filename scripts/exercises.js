@@ -46,13 +46,28 @@
       }else{
       return false;
   }}
+
+//   function isVowel(char) {
+//       if('aeiou'.includes(char)){
+//           return true;
+//       }
+//       return false;
+//   }
   
   
     // ---------------------
     // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
     // ---------------------
   
-  
+  function rovarspraket(text){
+      textArr= text.toLowerCase().split('');
+      for(let i=0; i< textArr.length; i++) {
+      if('bcdfghjklmnpqrstvwxyz').includes(text[i])){
+          textArr[i] = textArr[i] + 'o' + textArr[i];
+      }
+    }
+      return textArr.join('');
+  }
 
   
   
@@ -78,6 +93,8 @@
         }
         return total;
       };
+
+    //   const sum = arr => arr.reduce((acc, i) => acc + i);
     
   
     // ---------------------
@@ -92,6 +109,7 @@
     return newString;
   }
   
+  const reverse = string => string.split('').reverse().join('');
   
     // ---------------------
     // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
@@ -101,7 +119,7 @@
         let count = 0
         for(let i= 0; i < length; i++){
             if(length[i] > count){
-                count = length[i]
+                count = length[i];
             }
         }
         return count;
@@ -126,13 +144,24 @@
         return longestWords;
       }
 
-  
+    //   const filterLongWords = (arr,i) => arr.filter(word.length > i)
   
   
     // ---------------------
     // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
     // ---------------------
-  
+  function charFreq(str){
+      const freqList = {};
+      for(let i =0; i<str.length; i++){
+          if(freqList[str[i]]){
+            freqList[str[i]] = freqList[str[i]] + 1;
+          }else{
+              freqList[str[i]] = 1
+          }
+      }
+  }
+  return freqList;
+
   
     ////////////////////////////////////////////////////////////////////////
     /////////////////////////DO NOT CHANGE CODE BELOW///////////////////////
