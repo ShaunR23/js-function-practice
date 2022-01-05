@@ -54,7 +54,7 @@
   setTimeout(sayHi, 2000);
   
   // Put your answer below -------------------------
-  let sayHi = function(){
+  let sayHi(function(){
       alert("Hello, World!")
   } 
   // -----------------------------------------------
@@ -108,8 +108,8 @@
   
   // Put your answer below -------------------------
   
-  var reverseStr = function(str){
-      
+  return str.split('').reverse().join('')
+
   }
   
   // -----------------------------------------------
@@ -145,9 +145,16 @@
   
   // Put your answer below -------------------------
   
-  let spanishColor = function(colorName){
-      
-
+  let colors = {
+      rojo:'ff0000',
+      blanco: 'ffffff',
+      azul: '0000ff',
+      verde: 00ff00
+      negro:
+  }
+  function spanishColor(colorName){
+      return colors[colorName]
+  }
   }
   
   // -----------------------------------------------
@@ -190,9 +197,10 @@
   // callTenTime(functionName);
   
   // Put your answer below -------------------------
-  var callNtimes = function(){
-      var 
-  }
+  var callNTimes = function(callback, i) {
+    var range = Array.from(Array(i).keys());
+    range.forEach(callback);
+  };
   
   // -----------------------------------------------
   
@@ -220,7 +228,7 @@
   };
   
   // Put your answer below -------------------------
-  
+  (function(){
   var increaseScore = function() {
       let score = 0;
       score++;
@@ -229,7 +237,7 @@
   var decreasesScore = function() {
       let score = 0;
       score--;
-  }
+  }();
   
   // -----------------------------------------------
   
