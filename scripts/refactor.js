@@ -54,9 +54,9 @@
   setTimeout(sayHi, 2000);
   
   // Put your answer below -------------------------
-  let sayHi(function(){
+  let sayHi = (function(){
       alert("Hello, World!")
-  } 
+  } )
   // -----------------------------------------------
   
   //////////////////////////////////////////////////
@@ -110,7 +110,7 @@
   
   return str.split('').reverse().join('')
 
-  }
+  })
   
   // -----------------------------------------------
   
@@ -146,16 +146,16 @@
   // Put your answer below -------------------------
   
   let colors = {
-      rojo:'ff0000',
-      blanco: 'ffffff',
-      azul: '0000ff',
-      verde: 00ff00
-      negro:
+      rojo:'#ff0000',
+      blanco: '#ffffff',
+      azul: '#0000ff',
+      verde: "#00ff00",
+      negro: "#000000",
   }
   function spanishColor(colorName){
-      return colors[colorName]
+      return colors[colorName];
   }
-  }
+  
   
   // -----------------------------------------------
   

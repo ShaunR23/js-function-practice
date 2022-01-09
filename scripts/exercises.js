@@ -60,9 +60,9 @@
     // ---------------------
   
   function rovarspraket(text){
-      textArr= text.toLowerCase().split('');
+      let textArr= text.toLowerCase().split('');
       for(let i=0; i< textArr.length; i++) {
-      if('bcdfghjklmnpqrstvwxyz').includes(text[i])){
+      if('bcdfghjklmnpqrstvwxyz'.includes(text[i])){
           textArr[i] = textArr[i] + 'o' + textArr[i];
       }
     }
@@ -109,21 +109,19 @@
     return newString;
   }
   
-  const reverse = string => string.split('').reverse().join('');
+  // const reverse = string => string.split('').reverse().join('');
   
     // ---------------------
     // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
     // ---------------------
-    function findLongestWord(arr){
-        let length = arr.length
-        let count = 0
-        for(let i= 0; i < length; i++){
-            if(length[i] > count){
-                count = length[i];
-            }
+    function findLongestWord(arr) {
+      let longest = 0;
+        for(let i = 0; i < arr.length; i++) {
+          if(arr[i].length > longest) {
+            longest = arr[i].length;
+          }
         }
-        return count;
-
+      return longest;
     }
 
   
@@ -136,7 +134,7 @@
     function filterLongWords(arr, int){
         let length = arr.length;
         let longestWords = [];
-        for (i = 0; i < length; i++) {
+        for (let i = 0; i < length; i++) {
           if (arr[i].length > int) {
             longestWords[longestWords.length] = arr[i];
           }
@@ -159,8 +157,9 @@
               freqList[str[i]] = 1
           }
       }
+      return freqList;
   }
-  return freqList;
+  
 
   
     ////////////////////////////////////////////////////////////////////////
